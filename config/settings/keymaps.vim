@@ -4,11 +4,12 @@
 
 let mapleader = " "
 
-""" TABS """
-" Switch to next/previous tab
-nnoremap <leader>tn :tabnext<CR>
-nnoremap <leader>tp :tabprevious<CR>
+""" BUFFERS """
+" Switch to next/previous buffer
+nnoremap <leader>bn :bn<CR>
+nnoremap <leader>bp :bp<CR>
 
-"Open new tab
-nnoremap <leader>to :tabe 
+"Open new buffer
+nnoremap <leader>be :e 
+
 
