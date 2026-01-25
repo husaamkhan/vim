@@ -9,7 +9,9 @@ let mapleader = " "
 nnoremap <leader>bn :bn<CR>
 nnoremap <leader>bp :bp<CR>
 
-"Open new buffer
+" Open new buffer
 nnoremap <leader>be :e 
 
+" Close buffer
+nnoremap <leader>bc :bw
 
