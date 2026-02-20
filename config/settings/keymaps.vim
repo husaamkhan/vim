@@ -15,3 +15,5 @@ nnoremap <leader>be :e
 " Close buffer
 nnoremap <leader>bc :bw
 
+" Open fuzzy finder
+nnoremap <leader>F :Files<CR>

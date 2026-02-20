@@ -2,7 +2,8 @@
 "  SETTINGS  "
 """"""""""""""
 
-colorscheme moonfly
+set background=dark
+colorscheme gruvbox
 
 set relativenumber
 set number

@@ -14,6 +14,7 @@ Plug 'vim-airline/vim-airline-themes'
 
 " theme
 Plug 'bluz71/vim-moonfly-colors', { 'as': 'moonfly' }
+Plug 'morhetz/gruvbox'
 
 " Better git functionality
 Plug 'tpope/vim-fugitive'
@@ -21,6 +22,9 @@ Plug 'tpope/vim-fugitive'
 " Fuzzy finder
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+
+" Multi cursor
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 """ End of plugins """
 
