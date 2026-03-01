@@ -17,3 +17,4 @@ nnoremap <leader>bc :bw
 
 " Open fuzzy finder
 nnoremap <leader>F :Files<CR>
+
