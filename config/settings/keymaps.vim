@@ -25,7 +25,9 @@ function! SplitLineIntoLines()
   let inner_indent = indent . '    '
   let line = substitute(line, '{\s*', '{\n' . inner_indent, '')
   let line = substitute(line, '\s*,\s*', ',\n' . inner_indent, 'g')
-  let line = substitute(line, '\s*}', '\n' . indent . '}', '')
-  call setline('.', split(line, '\n'))
+  let line = substitute(line, '\s*}$', '\n' . indent . '}', '')
+  let lines = split(line, '\n')
+  call setline('.', lines[0])
+  call append('.', lines[1:])
 endfunction
-nnoremap <leader>sl :call SplitLineIntoLines()<CR>
+nnoremap <leader>sp :call SplitLineIntoLines()<CR>
