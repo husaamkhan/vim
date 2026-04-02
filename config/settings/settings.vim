@@ -25,3 +25,5 @@ set autoindent
 set smartindent
 
 set termguicolors
+
+set colorcolumn=100
