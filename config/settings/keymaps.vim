@@ -30,4 +30,4 @@ function! SplitLineIntoLines()
   call setline('.', lines[0])
   call append('.', lines[1:])
 endfunction
-nnoremap <leader>sp :call SplitLineIntoLines()<CR>
+nnoremap <leader>Js :call SplitLineIntoLines()<CR>
