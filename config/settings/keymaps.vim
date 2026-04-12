@@ -31,3 +31,13 @@ function! SplitLineIntoLines()
   call append('.', lines[1:])
 endfunction
 nnoremap <leader>Js :call SplitLineIntoLines()<CR>
+
+" Split chained method calls on dots onto indented new lines
+function! SplitOnDots()
+  let line = getline('.')
+  let indent = matchstr(line, '^\s*')
+  let parts = split(line, '\.')
+  call setline('.', parts[0])
+  call append('.', map(parts[1:], {_, v -> indent . '    .' . v}))
+endfunction
+nnoremap <leader>Jd :call SplitOnDots()<CR>
