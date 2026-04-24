@@ -26,4 +26,5 @@ set smartindent
 
 set termguicolors
 
-set colorcolumn=100
+" Prevents cursor from changing from solid rectangle
+set guicursor=

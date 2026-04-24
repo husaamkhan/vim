@@ -13,7 +13,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " theme
-Plug 'bluz71/vim-moonfly-colors', { 'as': 'moonfly' }
 Plug 'morhetz/gruvbox'
 
 " Better git functionality
