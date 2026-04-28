@@ -3,7 +3,7 @@
 """"""""""""""
 
 set background=dark
-colorscheme gruvbox
+colorscheme ayu-dark
 
 set relativenumber
 set number
@@ -18,13 +18,18 @@ set encoding=utf-8
 set nobackup
 set nowritebackup
 
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set autoindent
+"set tabstop=4
+"set softtabstop=4
+"set shiftwidth=4
 set smartindent
+"set autoindent
 
 set termguicolors
 
 " Prevents cursor from changing from solid rectangle
 set guicursor=
+
+" Changes line number colours to make them easier to see
+lua vim.api.nvim_set_hl(0, "LineNr", { fg = "#5C6773" })
+lua vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#E6B450", bold = true })
+

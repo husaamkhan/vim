@@ -14,6 +14,7 @@ Plug 'vim-airline/vim-airline-themes'
 
 " theme
 Plug 'morhetz/gruvbox'
+Plug 'Shatur/neovim-ayu'
 
 " Better git functionality
 Plug 'tpope/vim-fugitive'
