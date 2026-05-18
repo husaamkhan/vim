@@ -10,5 +10,5 @@ source ~/.vim/config/settings/settings.vim
 source ~/.vim//config/settings/keymaps.vim
 
 " Loading in plugins configs
-source ~/.vim/config/plugins/coc.vim
+source ~/.vim/config/plugins/lsp.vim
 source ~/.vim/config/plugins/airline.vim

@@ -16,7 +16,9 @@ nnoremap <leader>be :e
 nnoremap <leader>bc :bw
 
 " Open fuzzy finder
-nnoremap <leader>F :Files<CR>
+nnoremap <leader>F <cmd>Telescope find_files<CR>
+nnoremap <leader>G  <cmd>Telescope live_grep<CR>
+nnoremap <leader>fb <cmd>Telescope buffers<CR>
 
 " Split current line into multiple indented lines
 function! SplitLineIntoLines()

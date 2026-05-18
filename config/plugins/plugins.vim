@@ -6,9 +6,6 @@ call plug#begin()
 
 """ Start of plugins """
 
-" autocompletions, syntax highlighting, etc.
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
@@ -16,15 +13,12 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'morhetz/gruvbox'
 Plug 'Shatur/neovim-ayu'
 
-" Better git functionality
-Plug 'tpope/vim-fugitive'
+" Telescope
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
-" Fuzzy finder
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-
-" Multi cursor
-Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+" LSP
+Plug 'neovim/nvim-lspconfig'
 
 """ End of plugins """
 
