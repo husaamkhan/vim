@@ -40,6 +40,13 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', '<leader>f',  vim.lsp.buf.format,          opts)
   vim.keymap.set('n', '[g',         vim.diagnostic.goto_prev,    opts)
   vim.keymap.set('n', ']g',         vim.diagnostic.goto_next,    opts)
+
+  vim.keymap.set('i', '<Tab>',   function()
+    return vim.fn.pumvisible() == 1 and '<C-n>' or '<Tab>'
+  end, { buffer = bufnr, expr = true })
+  vim.keymap.set('i', '<S-Tab>', function()
+    return vim.fn.pumvisible() == 1 and '<C-p>' or '<S-Tab>'
+  end, { buffer = bufnr, expr = true })
 end
 
 vim.api.nvim_create_autocmd('FileType', {
